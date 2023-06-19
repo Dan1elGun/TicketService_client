@@ -59,7 +59,7 @@ const ProfileModal = ({show, onHide, profile}) => {
                                 })}
                             </option>
                             {directionStore.directions.map((item) =>
-                                <option key={item.id} value={item.id}>{item.name}</option>
+                                <option key={item.id} value={item.id}>{item.code + ' ' + item.name}</option>
                             )}
                         </Form.Select>
                     </Form.Group>
